@@ -1,0 +1,523 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
+  .nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  
+  .nav-list a:hover {
+    background: var(--main-blue);
+  }
+  
+  
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: url(https://www.pxwall.com/wp-content/uploads/2018/07/Wallpaper%20Lines,%20digital,%20red,%204K,%20Abstract%20461651997.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .welcome-section > p {
+    font-size: 4rem;
+    font-weight: 200;
+    font-style: italic;
+    color: black;
+    box-shadow: 5px 5px 5px;
+    text-shadow: 3px 3px 3px grey;
+  }
+  
+  .projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background-image: url(https://img.freepik.com/photos-gratuite/fond-texture-abstraite-turquoise_164075-908.jpg?size=626&ext=jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+  }
+  
+  @media (max-width: 28.75em) {
+    .projects-section-header {
+      font-size: 4rem;
+    }
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  
+  @media (max-width: 30.625em) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1r;
+    }
+  }
+  
+  .project {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+  }
+  
+  .project:hover {
+    color: #ff7f50;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    background-position: center;
+  }
+
+  .section-containers {
+    text-align: center;
+    padding: 0rem 3rem;
+    background-image: url(https://www.pnpm.ma/wp-content/uploads/2018/05/fond-ecran-wallpaper-image-fonds-ecran-abstrait-gris-10.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;  
+  } 
+
+  .skills-section-header{
+    color: white;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    margin-top: 50px;
+  }
+
+
+  .containers {
+    height: auto;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 00 25 #000000;
+    padding: 10px 10px 40px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .containers .bar:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .skills-title{
+    color: white;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    position: relative;
+    right: 360px;
+  }
+  .bar {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 10px,
+            inset -5px -5px 10px;
+    position: relative;
+    right: 360px;
+  }
+  .bar-stat{
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-shadow: 0 0 5px  #000000;
+  }
+  #html{
+    background: #2DA8D8ff;
+    animation: htmlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #css{
+    background: #2DA8D8ff;
+    animation: cssSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #js{
+    background: #2DA8D8ff;
+    animation: jsSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #photoshop{
+    background: #2DA8D8ff;
+    animation: photoshopSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #office{
+    background: #2DA8D8ff;
+    animation: officeSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  
+
+  @keyframes htmlSlide{
+    0%{width: 0%;}
+    100%{width: 70%;}
+  }
+  @keyframes cssSlide{
+    0%{width: 0%;}
+    100%{width: 70%;}
+  }
+  @keyframes jsSlide{
+    0%{width: 0%;}
+    100%{width: 46%;}
+  }
+  @keyframes photoshopSlide{
+    0%{width: 0%;}
+    100%{width: 80%;}
+  }
+  @keyframes officeSlide{
+    0%{width: 0%;}
+    100%{width: 75%;}
+  }
+   
+
+
+
+  .containers .bar2:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .skills-title2{
+    color: white;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    position: relative;
+    bottom: 392px;
+    left: 360px;
+  }
+  .bar2 {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 10px,
+            inset -5px -5px 10px;
+    position: relative;
+    bottom:392px;
+    left: 360px;
+  }
+  .bar-stat2{
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-shadow: 0 0 5px  #000000;
+  }
+  #creativity{
+    background: #2DA8D8ff;
+    animation: creativitySlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #organisation{
+    background: #2DA8D8ff;
+    animation: organisationSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #problem{
+    background: #2DA8D8ff;
+    animation: problemSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #adaptation{
+    background: #2DA8D8ff;
+    animation: adaptationSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #positivity{
+    background: #2DA8D8ff;
+    animation: positivitySlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+
+  @keyframes creativitySlide{
+    0%{width: 0%;}
+    100%{width: 90%;}
+  }
+  @keyframes organisationSlide{
+    0%{width: 0%;}
+    100%{width: 80%;}
+  }
+  @keyframes problemSlide{
+    0%{width: 0%;}
+    100%{width: 90%;}
+  }
+  @keyframes adaptationSlide{
+    0%{width: 0%;}
+    100%{width: 90%;}
+  }
+  @keyframes positivitySlide{
+    0%{width: 0%;}
+    100%{width: 80%;}
+  }
+
+
+
+
+  .containers .bar3:not(:last-child){
+    margin-top: 20px;
+  }
+  .skills-title3{
+    color: white;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    position: relative;
+    bottom: 150px;
+  }
+  .bar3 {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 10px,
+            inset -5px -5px 10px;
+    position: relative;
+    bottom: 150px;
+  }
+  .bar-stat3{
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-shadow: 0 0 5px  #000000;
+  }
+  #english{
+    background: #2DA8D8ff;
+    animation: englishSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #frensh{
+    background: #2DA8D8ff;
+    animation: frenshSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #german{
+    background: #2DA8D8ff;
+    animation: germanSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+  #arabic{
+    background: #2DA8D8ff;
+    animation: arabicSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  }
+
+  @keyframes englishSlide{
+    0%{width: 0%;}
+    100%{width: 95%;}
+  }
+  @keyframes frenshSlide{
+    0%{width: 0%;}
+    100%{width: 100%;}
+  }
+  @keyframes germanSlide{
+    0%{width: 0%;}
+    100%{width: 60%;}
+  }
+  @keyframes arabicSlide{
+    0%{width: 0%;}
+    100%{width: 80%;}
+  }
+
+
+
+
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
+  
+  .btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+  }
+  
+  .btn-show-all:hover {
+    background: var(--main-red);
+  }
+  
+  .btn-show-all:hover > i {
+    transform: translateX(2px);
+  }
+  
+  .btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+  
+  .contact-section {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background-image: url(https://pickywallpapers.com/img/2018/2/firewatch-mountain-desktop-wallpaper-418-425-hd-wallpapers.jpg)
+  }
+  
+  .contact-section-header > h2 {
+    font-size: 6rem;
+  }
+  
+  @media (max-width: 28.75em) {
+    .contact-section-header > h2 {
+      font-size: 4rem;
+    }
+  }
+  
+  .contact-section-header > p {
+    font-style: italic;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+  
+  
+  footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+  }
+  
+  footer > p {
+    margin: 2rem;
+  }
+  
+  footer i {
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
